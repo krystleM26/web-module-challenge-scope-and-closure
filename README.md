@@ -61,10 +61,12 @@ You will be running your tests in one terminal and debugging in the other. As yo
 Edit the `ReadMe` file with your answers to the questions below.
 
 1. In your own words, define closure (1-2 sentences).
+A closure in javaScript is similar to a one-way bridge that allows you to access the outer function scope from the inside, and not from the outside. 
 2. Study the following code, then answer the questions below.
 
 ```js
 function personalDice(name){
+
   return function(){
       // generate random number between 1 and 6
     const newRoll = Math.floor(Math.random() * 6);
@@ -82,9 +84,13 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+ The closure is located at the return function
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
-c. What is the lexical scope of `newRoll`? 
+   The number will always be between 1 and 6 when danRolls, and the number will change each roll. 
 
+c. What is the lexical scope of `newRoll`? 
+The lexical scope of the newRoll is doing the math method.
+  
 
 ### Task 3 - Stretch Goals
 
